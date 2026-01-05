@@ -16,8 +16,6 @@ class AuthManager {
         this.CURRENT_USER_KEY = 'arthasetu_user';
         this.SETTINGS_KEY = 'arthasetu_settings';
         this.currentUser = this.loadCurrentUser();
-    }
-
     /**
      * Initialize localStorage with demo data (first time only)
      */
@@ -353,4 +351,5 @@ if (typeof window !== 'undefined') {
 // For Node.js/SSR (if needed)
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = AuthManager;
+
 }
